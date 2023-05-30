@@ -1,0 +1,453 @@
+*{
+    background: #F3F5FC;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.logo{
+    padding-top: 10px;
+    margin-left: 10px;
+    width: 8%;
+}
+
+main{
+    display: flex;
+    margin-bottom: 50px;
+    margin-left: 80px;
+}
+
+.ingrese-texto{
+    border: none;
+    font-size: 32px;
+    color: #0A3871;
+    margin-top: 75px;
+    width: 675px;
+    height: 250px;
+    text-transform: lowercase;
+}
+
+::placeholder{ color:#0A3871;}
+    .ingrese-texto:focus{
+        outline: none;
+    }
+
+.mensaje{
+    font-size: 32px;
+    width: 300px;
+    height: 550px;
+    background: white;
+    background-image: url(Imagenes/Muñeco.png);
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 24px;
+    color: #0A3871;
+    margin-left: 110px;
+    margin-top: -30px;
+    padding-left: 30px;
+    margin-bottom: 32px;
+    display: flex;
+
+}
+
+.mensaje:focus{
+    outline: none;
+}
+
+
+.informacion{
+    color:#495057;
+    font-size: 18px;
+}
+
+
+.botones{
+    display: flex;
+    margin-top: 14px;
+}
+
+.boton-encriptar{
+    font-size: 32px;
+    background: #0A3871;
+    border: 2px solid #0A3871;
+    border-radius: 24px;
+    color: white;
+    cursor: pointer;
+    height: 65px;
+    width: 320px;
+    box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 0.6);
+}
+
+.boton-desencriptar{
+    font-size: 32px;
+    background: #D8DFE8;
+    border: 2px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 65px;
+    margin-left: 30px;
+    width: 320px;
+    box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 0.6);
+}
+
+.boton-encriptar:hover, .boton-desencriptar:hover, .boton-copiar:hover{
+    color: #000000;
+    font-size: 36px;
+    border: 2px solid #000000;
+    background: skyblue;
+    transform: scale(1.08);
+    transition: 0.5s all;
+}
+
+.mensaje-no-encontrado{
+    background: transparent;
+    width: 300px;
+    height: 200px;
+    margin-top: -300px;
+    margin-left: 130px;
+    text-align: center;
+}
+
+h3{
+    background: white;
+    font-size: 25px;
+    font-weight: bold;
+    color: #343a40;
+}
+
+div p{
+    background: white;
+    font-size: 20px;
+}
+
+.boton-copiar{
+    font-size: 32px;
+    border: 2px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 66px;
+    margin-left: 120px;
+    margin-top: -0xp;
+    position: absolute;
+    width: 310px;
+    box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 0.6);
+}
+
+.botonCopiar {
+    display: none;
+  }
+  
+
+footer{
+    text-align: center;
+    padding: 10px;
+    background: #F3F5FC;
+}
+
+.verificado{
+    width: 30px;
+    height: 30px;
+    margin-left: -315px;
+    box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.6);
+}
+
+.pie-de-pagina{
+    margin-top: -36px;
+    margin-left: -20px;
+    font-family: 'Oswaldo', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    text-shadow: 7px 7px 2px gray;
+    background: transparent;
+}
+
+/*-----*/
+.oculto {
+    display: none;
+}
+  
+#mensajeBienvenida {
+    background: #000000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+}
+  
+#mensajeBienvenida h1 {
+    background: #000000;
+    color: white;
+    font-weight: bold;
+    font-family: 'Oswaldo', sans-serif;
+    text-align: center;
+    font-size: 26px;
+    margin-top: 25vh;
+    text-shadow: 3px 3px 2px skyblue;
+    animation: ondular 4s linear infinite;
+}
+  
+@keyframes ondular {
+    0% { transform: translateY(0); }
+    25% { transform: translateY(-10px); }
+    50% { transform: translateY(0); }
+    75% { transform: translateY(10px); }
+    100% { transform: translateY(0); }
+}
+  
+  
+  
+.loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000000;
+}
+  
+.loading {
+    width: 550px; /* Ajusta el ancho según tus necesidades */
+    height: 380px; /* Ajusta la altura según tus necesidades */
+    margin-top: -18px;
+}
+  
+/*Estilo Responsivo para Teléfono
+
+@media (max-width: 768px) {*/
+    /* Estilos para dispositivos con ancho máximo de 600px */
+    /* Por ejemplo, ajustar el tamaño del texto */
+
+@media screen and (max-width:767px){
+    .logo{
+        padding-top: 0px;
+        margin-left: -10px;
+        width: 15%;
+    }
+
+    .ingrese-texto{
+        font-size: 26px;
+        position: absolute;
+        width: 100%;
+        height: 120px;
+        left: 10px;
+        top: 0px;
+    }
+
+    .informacion{
+        position: absolute;
+        font-size: 14px;
+        width: 100%;
+        height: 48px;
+        left: 10px;
+        top: 200px;
+        
+    }
+
+    .botones{
+        position: absolute;
+        height: 160px;
+        left: 15px;
+        top: 280px;
+        display: grid;
+        width: 100%;
+
+    }
+
+    .boton-encriptar{
+        font-size: 24px;
+        font-family: 'Inter', sans-serif;
+    }
+
+    .boton-desencriptar{
+        font-size: 24px;
+        font-family: 'Inter', sans-serif;
+        left: 0px;
+    }
+
+    .boton-encriptar:hover, .boton-desencriptar:hover, .boton-copiar:hover{
+        color: #000000;
+        font-size: 24px;
+        border: 2px solid;
+        transform: scale(1.02);
+        transition: 0.5s all;
+    }
+
+    .mensaje{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        background-image: none;
+
+        position: absolute;
+        width: 95%;
+        height: 265px;
+        left: -100px;
+        top: 495px;
+    }
+
+    .mensaje-no-encontrado{
+        width: 80%;
+        height: 30px;
+        position: absolute;
+        left: -80px;
+        top: 860px;
+    }
+
+    h3{
+        font-size: 16px;
+    }
+
+    div p{
+        font-size: 10px;
+    }
+
+    .boton-copiar{
+        font-size: 24px;
+        font-family: 'Inter', sans-serif;
+        width: 100%;
+        left: -110px;
+        top: 665px;
+    }
+
+    footer{
+        position: absolute;
+        top: 750px;
+        width: 100%;
+        height: 65px;
+        text-align: center;
+    }
+
+    .verificado{
+        position: relative;
+        margin-left: -150px;
+    }
+
+    .pie-de-pagina{
+        position: absolute;
+        font-size: 12px;
+        width: 120px;
+        left: 165px;
+    }
+}
+  
+
+    /* Estilos para tablets 
+@media (min-width: 768px) and (max-width: 768px) {*/
+
+@media screen and(min-width:767px) and (max-width:1023px) {
+    .logo{
+        padding-top: 20px;
+        margin-left: -10px;
+        width: 10%;
+    }
+
+    .ingrese-texto{
+        font-size: 26px;
+        position: absolute;
+        width: 100%;
+        height: 235px;
+        left: 10px;
+        top: 18px;
+    }
+
+    .informacion{
+        position: absolute;
+        font-size: 14px;
+        width: 100%;
+        height: 48px;
+        left: 10px;
+        top: 300px;
+        
+    }
+
+    .botones{
+        position: absolute;
+        height: 160px;
+        left: 15px;
+        top: 350px;
+        display: inline-block;
+        width: 100%;
+        margin-left: 20px;
+
+    }
+
+    .boton-encriptar{
+        font-size: 24px;
+        font-family: 'Inter', sans-serif;
+    }
+
+    .boton-desencriptar{
+        font-size: 24px;
+        font-family: 'Inter', sans-serif;
+    }
+
+    .boton-encriptar:hover, .boton-desencriptar:hover, .boton-copiar:hover{
+        color: #000000;
+        font-size: 24px;
+        border: 2px solid;
+        transform: scale(1.02);
+        transition: 0.5s all;
+    }
+
+    .mensaje{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        background-image: none;
+
+        position: absolute;
+        width: 95%;
+        height: 265px;
+        left: -100px;
+        top: 485px;
+    }
+
+    .mensaje-no-encontrado{
+        width: 80%;
+        height: 30px;
+        position: absolute;
+        left: -50px;
+        top: 835px;
+    }
+
+    h3{
+        font-size: 22px;
+    }
+
+    div p{
+        font-size: 14px;
+    }
+
+    .boton-copiar{
+        font-size: 24px;
+        font-family: 'Inter', sans-serif;
+        width: 100%;
+        left: -110px;
+        top: 665px;
+    }
+
+    footer{
+        position: absolute;
+        top: 750px;
+        width: 100%;
+        height: 65px;
+        text-align: center;
+    }
+
+    .verificado{
+        position: relative;
+        margin-left: -150px;
+    }
+
+    .pie-de-pagina{
+        position: absolute;
+        font-size: 12px;
+        width: 120px;
+        left: 350px;
+    }
+}
+
+  
+  
